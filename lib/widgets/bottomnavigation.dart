@@ -1,4 +1,5 @@
 
+import 'package:blockchain_voting/pages/home.dart';
 import 'package:blockchain_voting/screens/candiate.dart';
 import 'package:blockchain_voting/screens/homeScreen.dart';
 import 'package:blockchain_voting/screens/userprofile.dart';
@@ -12,7 +13,7 @@ import '../utils/colors.dart';
 List<Widget> homeScreenItems = [
   HomeScreen(),
   CandiatedScreen(),
-  VoterScreen(),
+  Home(),
   UserProfile(),
 
 ];
@@ -75,7 +76,7 @@ class _NavigateScreenState extends State<NavigateScreen> {
           ),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.health_and_safety_outlined,
+                Icons.accessibility_outlined,
                 color: (_page == 1) ? primaryColor : secondaryColor,
               ),
               label: '',
@@ -87,14 +88,7 @@ class _NavigateScreenState extends State<NavigateScreen> {
               ),
               label: '',
               backgroundColor: primaryColor),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.history_outlined,
-              color: (_page == 3) ? primaryColor : secondaryColor,
-            ),
-            label: '',
-            backgroundColor: primaryColor,
-          ),
+
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person,
