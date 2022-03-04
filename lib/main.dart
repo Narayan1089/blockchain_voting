@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:blockchain_voting/widgets/bottomnavigation.dart';
 import 'package:flutter/material.dart';
 
 import 'pages/home.dart';
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
+      home: NavigateScreen(),///Home(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           brightness: Brightness.dark,
