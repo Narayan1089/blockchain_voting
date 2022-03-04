@@ -14,9 +14,12 @@ List<Widget> homeScreenItems = [
   HomeScreen(),
   CandiatedScreen(),
   Home(),
-  UserProfile(),
+ProfileScreen(),
 
 ];
+
+class UserProfile {
+}
 
 class NavigateScreen extends StatefulWidget {
   const NavigateScreen({Key? key}) : super(key: key);
