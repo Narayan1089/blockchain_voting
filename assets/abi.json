@@ -140,7 +140,7 @@
                 "type": "string"
             }
         ],
-        "name": "strartElection",
+        "name": "startElection",
         "outputs": [],
         "stateMutability": "nonpayable",
         "type": "function"

@@ -52,7 +52,7 @@ class _HomeState extends State<Home> {
                 height: 45,
                 child: ElevatedButton(
                     onPressed: () async {
-                      if (controller.text.isNotEmpty) {
+                      if (controller.text.length > 0) {
                         await startElection(controller.text, ethClient!);
                         Navigator.push(
                             context,
