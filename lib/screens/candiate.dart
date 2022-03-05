@@ -24,7 +24,7 @@ class _CandiatedScreenState extends State<CandiatedScreen> {
         shadowColor: Colors.grey,
         backgroundColor: mobileBackgroundColor,
         title: const Text(
-          "Doctors",
+          "candidates",
           style: TextStyle(
               fontWeight: FontWeight.bold, color: white, fontSize: 25),
         ),
@@ -162,18 +162,19 @@ class doctorwidget extends StatelessWidget {
                                 fontSize: 18,
                               ),
                             ),
+                            SizedBox(height:0.1,),
                             Text(
-                              "kefkjef",
+                            address,
                               style: TextStyle(
                                 fontSize: 15,
                               ),
                             ),
-                            Text(
-                              "ehfrh",
-                              style: TextStyle(
-                                fontSize: 12,
-                              ),
-                            ),
+                            // Text(
+                            //   "ehfrh",
+                            //   style: TextStyle(
+                            //     fontSize: 12,
+                            //   ),
+                            // ),
                           ],
                         ),
                       ),

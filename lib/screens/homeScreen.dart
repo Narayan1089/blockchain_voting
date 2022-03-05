@@ -25,6 +25,21 @@ class _HomeScreenState extends State<HomeScreen> {
               fontWeight: FontWeight.bold, color: white, fontSize: 25),
         ),
         actions: [
+           IconButton(
+            icon: const Icon(
+              Icons.info,
+              color: white,
+              size: 30.0,
+            ),
+            onPressed: () async {
+
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (context) => const LoginScreen(),
+                ),
+              );
+            },
+          ),
           IconButton(
             icon: const Icon(
               Icons.logout,
@@ -39,7 +54,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               );
             },
-          )
+          ),
+
         ],
       ),
 
