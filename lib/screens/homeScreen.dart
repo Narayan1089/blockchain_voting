@@ -3,6 +3,7 @@ import 'package:blockchain_voting/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/colors.dart';
+import '../widgets/adminScreen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({ Key? key }) : super(key: key);
@@ -35,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
-                  builder: (context) => const LoginScreen(),
+                  builder: (context) => const AdminScreen(),
                 ),
               );
             },
