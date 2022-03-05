@@ -87,10 +87,10 @@ class _ElectionInfoState extends State<ElectionInfo> {
                   ),
                 ),
                 ElevatedButton(
-                    onPressed: () {
-                      addCandidate(
-                          addCandidateController.text, widget.ethClient);
-                    },
+                    onPressed: () {},
+                    //   addCandidate(
+                    //       addCandidateController.text, widget.ethClient);
+                    // },
                     child: const Text('Add Candidate'))
               ],
             ),
